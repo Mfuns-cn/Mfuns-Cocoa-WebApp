@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F3A3DA2B278DD8F6008667FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A3DA1A278DD8F4008667FC /* ContentView.swift */; };
 		F3A3DA2C278DD8F6008667FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A3DA1A278DD8F4008667FC /* ContentView.swift */; };
 		F3A3DA2D278DD8F6008667FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3A3DA1B278DD8F6008667FC /* Assets.xcassets */; };
 		F3A3DA2E278DD8F6008667FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3A3DA1B278DD8F6008667FC /* Assets.xcassets */; };
 		F3A3DA39278DDAC1008667FC /* MfunsWebApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A3DA38278DDAC1008667FC /* MfunsWebApp.swift */; };
 		F3A3DA3A278DDAC1008667FC /* MfunsWebApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A3DA38278DDAC1008667FC /* MfunsWebApp.swift */; };
+		F3A3DA3F278DE0E2008667FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A3DA3E278DE0E2008667FC /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +23,7 @@
 		F3A3DA28278DD8F6008667FC /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		F3A3DA37278DDA4B008667FC /* webapp--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "webapp--iOS--Info.plist"; sourceTree = "<group>"; };
 		F3A3DA38278DDAC1008667FC /* MfunsWebApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MfunsWebApp.swift; sourceTree = "<group>"; };
+		F3A3DA3E278DE0E2008667FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +47,7 @@
 		F3A3DA13278DD8F4008667FC = {
 			isa = PBXGroup;
 			children = (
+				F3A3DA3D278DE0CC008667FC /* iOS */,
 				F3A3DA37278DDA4B008667FC /* webapp--iOS--Info.plist */,
 				F3A3DA18278DD8F4008667FC /* Shared */,
 				F3A3DA27278DD8F6008667FC /* macOS */,
@@ -56,7 +58,6 @@
 		F3A3DA18278DD8F4008667FC /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				F3A3DA1A278DD8F4008667FC /* ContentView.swift */,
 				F3A3DA1B278DD8F6008667FC /* Assets.xcassets */,
 				F3A3DA38278DDAC1008667FC /* MfunsWebApp.swift */,
 			);
@@ -75,9 +76,18 @@
 		F3A3DA27278DD8F6008667FC /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				F3A3DA1A278DD8F4008667FC /* ContentView.swift */,
 				F3A3DA28278DD8F6008667FC /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		F3A3DA3D278DE0CC008667FC /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F3A3DA3E278DE0E2008667FC /* ContentView.swift */,
+			);
+			path = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3A3DA39278DDAC1008667FC /* MfunsWebApp.swift in Sources */,
-				F3A3DA2B278DD8F6008667FC /* ContentView.swift in Sources */,
+				F3A3DA3F278DE0E2008667FC /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
