@@ -4,7 +4,7 @@ import SwiftUI
 struct MfunsWebApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootContentView()
         }
     }
 }

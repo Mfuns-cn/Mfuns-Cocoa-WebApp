@@ -7,23 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F3A3DA2C278DD8F6008667FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A3DA1A278DD8F4008667FC /* ContentView.swift */; };
+		F35E949A278DF9A200C0EA8C /* RootContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E9499278DF9A200C0EA8C /* RootContentView.swift */; };
+		F35E949B278DF9A200C0EA8C /* RootContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E9499278DF9A200C0EA8C /* RootContentView.swift */; };
+		F3A3DA2C278DD8F6008667FC /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A3DA1A278DD8F4008667FC /* WebView.swift */; };
 		F3A3DA2D278DD8F6008667FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3A3DA1B278DD8F6008667FC /* Assets.xcassets */; };
 		F3A3DA2E278DD8F6008667FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3A3DA1B278DD8F6008667FC /* Assets.xcassets */; };
 		F3A3DA39278DDAC1008667FC /* MfunsWebApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A3DA38278DDAC1008667FC /* MfunsWebApp.swift */; };
 		F3A3DA3A278DDAC1008667FC /* MfunsWebApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A3DA38278DDAC1008667FC /* MfunsWebApp.swift */; };
-		F3A3DA3F278DE0E2008667FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A3DA3E278DE0E2008667FC /* ContentView.swift */; };
+		F3A3DA3F278DE0E2008667FC /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A3DA3E278DE0E2008667FC /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F3A3DA1A278DD8F4008667FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F35E9499278DF9A200C0EA8C /* RootContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContentView.swift; sourceTree = "<group>"; };
+		F3A3DA1A278DD8F4008667FC /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		F3A3DA1B278DD8F6008667FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3A3DA20278DD8F6008667FC /* 喵御宅.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "喵御宅.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A3DA26278DD8F6008667FC /* webapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = webapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A3DA28278DD8F6008667FC /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		F3A3DA37278DDA4B008667FC /* webapp--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "webapp--iOS--Info.plist"; sourceTree = "<group>"; };
 		F3A3DA38278DDAC1008667FC /* MfunsWebApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MfunsWebApp.swift; sourceTree = "<group>"; };
-		F3A3DA3E278DE0E2008667FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F3A3DA3E278DE0E2008667FC /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 			children = (
 				F3A3DA1B278DD8F6008667FC /* Assets.xcassets */,
 				F3A3DA38278DDAC1008667FC /* MfunsWebApp.swift */,
+				F35E9499278DF9A200C0EA8C /* RootContentView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -76,7 +80,7 @@
 		F3A3DA27278DD8F6008667FC /* macOS */ = {
 			isa = PBXGroup;
 			children = (
-				F3A3DA1A278DD8F4008667FC /* ContentView.swift */,
+				F3A3DA1A278DD8F4008667FC /* WebView.swift */,
 				F3A3DA28278DD8F6008667FC /* macOS.entitlements */,
 			);
 			path = macOS;
@@ -85,7 +89,7 @@
 		F3A3DA3D278DE0CC008667FC /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				F3A3DA3E278DE0E2008667FC /* ContentView.swift */,
+				F3A3DA3E278DE0E2008667FC /* WebView.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -188,8 +192,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F35E949A278DF9A200C0EA8C /* RootContentView.swift in Sources */,
 				F3A3DA39278DDAC1008667FC /* MfunsWebApp.swift in Sources */,
-				F3A3DA3F278DE0E2008667FC /* ContentView.swift in Sources */,
+				F3A3DA3F278DE0E2008667FC /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +202,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F35E949B278DF9A200C0EA8C /* RootContentView.swift in Sources */,
 				F3A3DA3A278DDAC1008667FC /* MfunsWebApp.swift in Sources */,
-				F3A3DA2C278DD8F6008667FC /* ContentView.swift in Sources */,
+				F3A3DA2C278DD8F6008667FC /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +329,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G45S6JPGUJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "webapp--iOS--Info.plist";
@@ -353,6 +360,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G45S6JPGUJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "webapp--iOS--Info.plist";
