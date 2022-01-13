@@ -104,6 +104,7 @@
 				F3A3DA1C278DD8F6008667FC /* Sources */,
 				F3A3DA1D278DD8F6008667FC /* Frameworks */,
 				F3A3DA1E278DD8F6008667FC /* Resources */,
+				F3C7B7582790AFC8008AE89F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -121,6 +122,7 @@
 				F3A3DA22278DD8F6008667FC /* Sources */,
 				F3A3DA23278DD8F6008667FC /* Frameworks */,
 				F3A3DA24278DD8F6008667FC /* Resources */,
+				F3C7B7592790B319008AE89F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -186,6 +188,43 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F3C7B7582790AFC8008AE89F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "CF_VERSION=$(git rev-list --count HEAD)\nCF_VERSION_STRING=$(git describe --tags --dirty | tr -d v)\n\ntarget_plist=\"$TARGET_BUILD_DIR/$INFOPLIST_PATH\"\ndsym_plist=\"$DWARF_DSYM_FOLDER_PATH/$DWARF_DSYM_FILE_NAME/Contents/Info.plist\"\n\nfor plist in \"$target_plist\" \"$dsym_plist\"; do\n  if [ -f \"$plist\" ]; then\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $CF_VERSION\" \"$plist\"\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $CF_VERSION_STRING\" \"$plist\"\n  fi\ndone\n";
+		};
+		F3C7B7592790B319008AE89F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "CF_VERSION=$(git rev-list --count HEAD)\nCF_VERSION_STRING=$(git describe --tags --dirty | tr -d v)\n\ntarget_plist=\"$TARGET_BUILD_DIR/$INFOPLIST_PATH\"\ndsym_plist=\"$DWARF_DSYM_FOLDER_PATH/$DWARF_DSYM_FILE_NAME/Contents/Info.plist\"\n\nfor plist in \"$target_plist\" \"$dsym_plist\"; do\n  if [ -f \"$plist\" ]; then\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $CF_VERSION\" \"$plist\"\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $CF_VERSION_STRING\" \"$plist\"\n  fi\ndone\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F3A3DA1C278DD8F6008667FC /* Sources */ = {
