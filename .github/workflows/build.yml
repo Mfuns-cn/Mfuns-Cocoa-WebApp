@@ -1,0 +1,29 @@
+name: iOS CI
+
+on:
+  [ push, pull_request ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+          submodules: recursive
+          fetch-depth: 0
+
+    - name: Build
+      run: |
+        mkdir temp
+        xcodebuild clean -workspace . -scheme 'webapp (iOS)' -configuration Release -verbose
+        xcodebuild archive -workspace . -scheme 'webapp (iOS)' -configuration Release -archivePath ./temp/mfuns-cocoa-webapp.xcarchive -verbose
+        xcodebuild -exportArchive -archivePath ./temp/mfuns-cocoa-webapp.xcarchive -exportPath ./temp/mfuns-cocoa-webapp.ipa -verbose
+
+    - name: Push Artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: mfuns-cocoa-webapp-${{ github.sha }}
+        path: temp/mfuns-cocoa-webapp.ipa
