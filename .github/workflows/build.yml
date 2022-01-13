@@ -19,8 +19,8 @@ jobs:
       run: |
         mkdir temp
         xcodebuild clean -scheme 'webapp (iOS)' -configuration Release -verbose
-        xcodebuild archive -scheme 'webapp (iOS)' -configuration Release -archivePath ./temp/mfuns-cocoa-webapp.xcarchive -allowProvisioningUpdates YES -verbose
-        xcodebuild -exportArchive -archivePath ./temp/mfuns-cocoa-webapp.xcarchive -exportPath ./temp/mfuns-cocoa-webapp.ipa -allowProvisioningUpdates YES -verbose
+        xcodebuild archive -scheme 'webapp (iOS)' -configuration Release -archivePath ./temp/mfuns-cocoa-webapp.xcarchive -allowProvisioningUpdates -verbose
+        xcodebuild -exportArchive -archivePath ./temp/mfuns-cocoa-webapp.xcarchive -exportPath ./temp/mfuns-cocoa-webapp.ipa -allowProvisioningUpdates -verbose
 
     - name: Push Artifacts
       uses: actions/upload-artifact@v2
