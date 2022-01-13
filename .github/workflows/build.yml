@@ -18,8 +18,8 @@ jobs:
     - name: Build
       run: |
         mkdir temp
-        xcodebuild clean -workspace . -scheme 'webapp (iOS)' -configuration Release -verbose
-        xcodebuild archive -workspace . -scheme 'webapp (iOS)' -configuration Release -archivePath ./temp/mfuns-cocoa-webapp.xcarchive -verbose
+        xcodebuild clean -scheme 'webapp (iOS)' -configuration Release -verbose
+        xcodebuild archive -scheme 'webapp (iOS)' -configuration Release -archivePath ./temp/mfuns-cocoa-webapp.xcarchive -verbose
         xcodebuild -exportArchive -archivePath ./temp/mfuns-cocoa-webapp.xcarchive -exportPath ./temp/mfuns-cocoa-webapp.ipa -verbose
 
     - name: Push Artifacts
