@@ -4,7 +4,7 @@ platform :ios do
     gym(
       scheme: "webapp (iOS)",
       configuration: "Release",
-      export_method: "development",
+      # export_method: "development",
       clean: true,
       output_directory: "./build",
       output_name: "mfuns-cocoa-webapp"
