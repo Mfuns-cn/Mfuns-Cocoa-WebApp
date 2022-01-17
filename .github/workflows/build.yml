@@ -17,8 +17,7 @@ jobs:
 
     - name: Build
       run: |
-        bundle install
-        bundle exec fastlane pack
+        fastlane pack
 
     - name: Push Artifacts
       uses: actions/upload-artifact@v2
