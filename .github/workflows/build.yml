@@ -17,7 +17,7 @@ jobs:
 
     - name: Build
       run: |
-        fastlane pack
+        fastlane ios pack
 
     - name: Push Artifacts
       uses: actions/upload-artifact@v2
