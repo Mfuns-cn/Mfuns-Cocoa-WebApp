@@ -17,6 +17,7 @@ jobs:
 
     - name: Build
       run: |
+        bundle install
         bundle exec fastlane pack
 
     - name: Push Artifacts
