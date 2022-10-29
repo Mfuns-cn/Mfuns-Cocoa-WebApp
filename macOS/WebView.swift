@@ -7,7 +7,7 @@ struct WebView: NSViewRepresentable {
     }
     
     func updateNSView(_ uiView: WKWebView, context: NSViewRepresentableContext<WebView>) {
-        let request = URLRequest(url: URL(string: "https://www.mfuns.cn")!)
+        let request = URLRequest(url: URL(string: "https://www.mfuns.xyz")!)
         uiView.load(request)
     }
 }
